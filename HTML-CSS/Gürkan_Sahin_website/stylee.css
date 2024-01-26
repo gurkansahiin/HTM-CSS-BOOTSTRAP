@@ -1,0 +1,445 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 8px;
+
+}
+.nav-icon {
+    display: none;
+}
+
+
+@media screen and (max-width:480px) {
+    html {
+        font-size: 4.5px;
+    
+    }
+    .star-light, .star-dark{
+    
+    position: relative;
+    top: 3rem;
+}
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: #1ABC9B;
+}
+
+nav {
+    width: 100%;
+    background-color: #2C3E4F;
+    color: #fff;
+    padding: 2.5rem 0;
+    position: fixed;
+    z-index: 500;
+}
+
+.logo-box {
+    float: left;
+    padding: 2rem 5rem;
+
+
+}
+
+.logo-box .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 3rem;
+
+}
+
+.link-box {
+    float: right;
+    padding: 0 5rem;
+}
+
+.link-box .nav-item {
+    float: left;
+    margin: 0.8rem;
+    padding: 2rem 0;
+}
+
+.link-box .nav-item .nav-link {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    display: inline-block;
+    letter-spacing: 0.1rem;
+    transition: color 0.4s;
+}
+
+.link-box .nav-item .nav-link:hover {
+    color: #1ABC9B;
+}
+
+@media screen and (max-width:720px) {
+    html {
+        font-size: 5.5px;
+    
+    }
+  
+    .star-light, .star-dark{
+    
+    position: relative;
+    top: 3rem
+}
+footer .container{
+
+
+margin-bottom: 9rem;
+}
+
+.logo-box{
+    float: none;
+    text-align: left;
+    background-color: #2C3E4F;
+    }
+
+    .link-box {
+    float: none;
+padding-left: 0;
+background-color: #2C3E4F;}
+
+.link-box .nav-item {
+  float: none;
+  background-color: #2C3E4F;
+
+  padding-left: 5rem;
+}
+
+.nav-icon{
+
+display: inline-block;
+position: absolute;
+top: 2rem;
+right: 5rem;
+font-size: 4rem;
+}
+
+.link-box.responsive ul:not(:first-child){
+    display: none;
+}
+
+
+nav .container{
+background-color: #2C3E4F;}
+
+    
+
+}
+
+/*p*/
+
+
+.profil-images {
+    max-width: 250px;
+    height: auto;
+}
+
+header {
+    background-color: #1ABC9B;
+    color: #fff;
+    text-align: center;
+    height: 800px;
+    padding-top: calc(106px + 6rem);
+
+}
+
+header h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    word-spacing: 1.5rem;
+
+}
+
+header h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+header h3 {
+    font-size: 2.5rem;
+    padding-top: 0.5rem;
+    font-weight: 700;
+    word-spacing: 0.5rem;
+}
+
+.profil-images {
+
+    width: 600px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    margin: 1rem;
+
+
+}
+
+.star-light {
+
+    color: #fff;
+    border-top: 0.4rem solid;
+    max-width: 60rem;
+    margin: 2.5rem auto;
+    border-radius: 2rem;
+    height: 0;
+    overflow: visible;
+}
+
+.star-light::after {
+    content: "\2605";
+    font-size: 5rem;
+    position: relative;
+    top: -37px;
+    background-color: #1ABC9B;
+}
+.star-dark  {
+color: #2C3E4F;
+border: none;
+max-width: 50rem;
+border-top: 0.4rem solid;
+border-radius: 2rem;
+height: 0;
+margin: 2.5rem auto;
+overflow: visible;
+}
+.star-dark::after {
+    content: "\2605";
+    font-size: 5rem;
+    position: relative;
+    top: -37px;
+    background-color: #e9ecef;
+}
+
+.about{
+min-height: 80.5rem;
+text-align: center;
+color: #2C3E4F;
+background-color: #e9ecef;
+}
+.about h2{
+padding-top: 5rem;
+font-size: 4.5rem;
+font-weight: 800;
+letter-spacing: 0.2rem;
+}
+
+.about-box{
+width: 100%;
+text-align: left;
+padding-top: 3.5rem;
+
+
+}
+
+
+.about-box .about-item{
+padding: 3.4rem;
+font-size: 2rem;
+font-weight: 700;
+word-spacing: 0.3rem;
+line-height: 3.4rem;
+
+}
+.about-box .about-item::after{
+   padding-left: 4rem;
+   padding-right: 4rem;
+    }
+
+    .cv{
+    
+    margin-top: 7rem;
+    padding: 2.5rem 4.5rem ;
+    font-size: 2.5rem;
+    border-radius: 5rem;
+    transition: 0.4s;
+    }
+
+    .cv:hover{
+    background-color: #2C3E4F;
+    
+    }
+
+    .cv a{
+    color: #2C3E4F;
+    }
+    .cv a:hover{
+    color: #e9ecef;
+    }
+
+    .contact{
+        height: 800px;
+    padding-top: calc(15px + 6rem);
+    text-align: center;
+   color: #fff;
+   background-color: #1ABC9B;
+    }
+    .contact h2{
+        font-size: 4.5rem;
+        font-weight: 800;
+        letter-spacing: 0.2rem;
+    }
+
+  form{
+
+
+text-align: left;
+padding-left: 8rem;
+padding-top: 10rem;
+width: 90%;
+color:#fff;
+
+
+}
+.contact-form-item{
+margin-bottom: 5rem;
+padding: 5rem auto; 
+width: 100%;
+color:#fff;
+border-bottom: 1px solid #e9ecef;
+
+ 
+
+}
+.contact-form-item input,.contact-form-item textarea{
+width: 100%;
+padding: 1.3rem 0;
+background-color: #1ABC9B;
+border-radius: 10px;
+border: none;
+display: block;
+font-size: 2rem;
+font-weight: 700;
+color: #fff;
+}
+
+.contact-form-item input:focus ,.contact-form-item textarea:focus{
+    outline: 0;
+
+}
+
+.contact-form ::placeholder{
+color: #e9ecef;
+font-size: 2.5rem;
+font-weight: 600;
+}
+.gonder{
+    float: left;
+    margin-top: 2rem;
+    padding: 1.5rem 2.5rem ;
+    font-size: 2rem;
+    border-radius: 1rem;
+    background-color: #1ABC9B;
+    color: #fff;
+    transition: 0.4s;
+    border: 3px solid #fff;
+    }
+    .gonder:hover{
+    background-color: #e9ecef;
+    color: #1ABC9B;
+    }
+
+    footer{
+    
+    padding: 6rem 0;
+    background-color: #2C3E4F;
+    color: #fff;
+    text-align: center;
+    
+}
+footer .container{
+background-color: #2C3E4F;
+
+margin-bottom: 10rem;
+
+
+
+}
+
+.col{
+    float: left;;
+width: 33%;
+text-align: center;
+
+
+}
+
+footer h4{
+position: relative;
+font-size: 2.8rem;
+}
+footer p{
+font-size: 2.4rem;
+position: relative;
+font-weight: 700;
+letter-spacing: 0.2rem;
+}
+
+
+
+footer li{
+display: inline-block;
+}
+.btn-social{
+    position: relative;
+top: 1rem;
+font-size: 2.5rem;
+margin: 1rem;
+width: 5rem;
+height: 5rem;
+border-radius: 50%;
+color: #2C3E4F;
+transition: 0.4s;
+}
+.btn-social
+:hover{
+
+color: #1ABC9B;
+}
+#sosyal{
+position: relative;
+top: 0.3rem;
+}
+.copyright {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.copyright .container{
+
+background-color: black;}

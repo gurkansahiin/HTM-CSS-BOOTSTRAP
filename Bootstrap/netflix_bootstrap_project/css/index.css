@@ -1,0 +1,69 @@
+body {
+    background-color: #141414;
+    overflow-x: hidden;
+}
+
+.owl-stage-outer {
+    overflow: visible !important;
+    /* "overflow" özelliği, bir öğenin içeriğinin öğenin sınırları dışına çıkması durumunda 
+    nasıl davranacağını belirler. "visible" değeri, içeriğin öğenin sınırları dışına çıkmasına izin verir.
+     Bu, içeriğin öğenin kenarlarından taşması durumunda, taşan kısmın görünür olacağı anlamına gelir.*/
+}
+
+.owl-carousel:hover{
+z-index: 2;
+}
+
+.owl-item{
+z-index: 1;
+transition: all .5s;
+transition-timing-function: ease-in-out;
+}
+.owl-carousel img {
+    transition: all .5s;
+}
+
+.owl-carousel .owl-item:hover {
+    z-index: 2;
+    transform: scale(1.25) !important;
+    /*boyutunu üstüne geldiğinde  zorunlu(important) olarak arttır*/
+
+}
+
+.entry {
+    position: relative;
+    height: 100vh;  /*yüksekliği ekranın boyutuna göre yüksekliğine göre ayarlıyor*/
+   
+}
+
+.owl-carousel .owl-item :hover  .detail{
+opacity: 1;
+}
+.detail{
+position: absolute;
+width: 100%;
+height: 105px;
+color: #fff;
+background-color: #606060;
+opacity: 0;
+transition: all .3s;
+
+
+}
+
+.detail a{
+
+color: #fff;}
+
+.modal-header {
+    background-color: transparent;
+  }
+
+ a{
+
+color: #fff;
+}
+
+a:hover{
+color: #fff;
+}
